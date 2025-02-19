@@ -2,8 +2,10 @@
   "name": "ercs_backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +17,14 @@
   "bugs": {
     "url": "https://github.com/chethanyadav456/ERCS_Backend/issues"
   },
-  "homepage": "https://github.com/chethanyadav456/ERCS_Backend#readme"
+  "homepage": "https://github.com/chethanyadav456/ERCS_Backend#readme",
+  "dependencies": {
+    "@arcjet/node": "^1.0.0-beta.2",
+    "bcryptjs": "^3.0.2",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.10.1"
+  }
 }

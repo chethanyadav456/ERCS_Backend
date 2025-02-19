@@ -10,10 +10,10 @@ import {
 const router = express.Router();
 
 // Emergency Routes
-router.post('/emergencies', createEmergency);
-router.get('/emergencies', getEmergencies);
-router.get('/emergencies/:id', getEmergencyById);
-router.patch('/emergencies/:id', updateEmergency);
-router.delete('/emergencies/:id', deleteEmergency);
+router.post('/', createEmergency);
+router.get('/', getEmergencies);
+router.get('/:id', getEmergencyById);
+router.patch('/:id', updateEmergency);
+router.delete('/:id', deleteEmergency);
 
 export default router;

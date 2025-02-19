@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
 const EmergencySchema = new mongoose.Schema(
   {
@@ -33,4 +33,4 @@ EmergencySchema.pre('save', function (next) {
 
 const Emergency = mongoose.model('Emergency', EmergencySchema);
 
-module.exports = Emergency;
+export default Emergency;

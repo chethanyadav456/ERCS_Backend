@@ -9,3 +9,12 @@ const IncidentSchema = new mongoose.Schema({
 });
 
 export default mongoose.model('Incident', IncidentSchema);
+
+// give me a sample data to insert into the db
+
+// {
+//     "type": "Fire",
+//     "location": "Lagos",
+//     "description": "A fire outbreak in Lagos",
+//     "status": "Pending"
+// }

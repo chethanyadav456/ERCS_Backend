@@ -8,8 +8,6 @@ import authRouter from './routes/auth.routes.js';
 import connectToDatabase from './database/mongodb.js'
 import errorMiddleware from './middlewares/error.middleware.js'
 import arcjetMiddleware from './middlewares/arcjet.middleware.js'
-import authRoutes from './routes/auth.routes.js';
-import userRoutes from './routes/user.routes.js';
 import incidentRoutes from './routes/incident.routes.js';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';

@@ -1,18 +1,15 @@
 import express from 'express';
 import cookieParser from 'cookie-parser';
+import cors from 'cors';
 
 import { PORT } from './config/env.js';
 
 import userRouter from './routes/user.routes.js';
 import authRouter from './routes/auth.routes.js';
+import incidentRouter from './routes/incident.routes.js';
 import connectToDatabase from './database/mongodb.js'
 import errorMiddleware from './middlewares/error.middleware.js'
 import arcjetMiddleware from './middlewares/arcjet.middleware.js'
-import incidentRoutes from './routes/incident.routes.js';
-import mongoose from 'mongoose';
-import dotenv from 'dotenv';
-import cors from 'cors';
-import incidentRouter from './routes/incidents.routes.js';
 
 const app = express();
 
